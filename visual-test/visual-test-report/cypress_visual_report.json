@@ -1,0 +1,48 @@
+{
+  "total": 2,
+  "totalPassed": 1,
+  "totalFailed": 1,
+  "totalSuites": 2,
+  "suites": [
+    {
+      "name": "3-visit.cy.ts",
+      "path": "cypress\\e2e\\3-visit.cy.ts",
+      "tests": [
+        {
+          "status": "fail",
+          "name": "3-visit.cy.ts-name2",
+          "percentage": 0.5209626276298264,
+          "failureThreshold": 0.1,
+          "specPath": "cypress\\e2e\\3-visit.cy.ts",
+          "specFilename": "3-visit.cy.ts",
+          "baselinePath": "visual-test\\screenshots\\baseline\\3-visit.cy.ts-name2.png",
+          "diffPath": "visual-test\\screenshots\\diff\\3-visit.cy.ts-name2.png",
+          "comparisonPath": "visual-test\\screenshots\\comparison\\3-visit.cy.ts-name2.png"
+        }
+      ]
+    },
+    {
+      "name": "test-new.cy.ts",
+      "path": "cypress\\e2e\\test-new.cy.ts",
+      "tests": [
+        {
+          "status": "pass",
+          "name": "test-new.cy.ts-name",
+          "percentage": 0,
+          "failureThreshold": 0.1,
+          "specPath": "cypress\\e2e\\test-new.cy.ts",
+          "specFilename": "test-new.cy.ts",
+          "baselinePath": "visual-test\\screenshots\\baseline\\test-new.cy.ts-name.png",
+          "diffPath": "",
+          "comparisonPath": "visual-test\\screenshots\\comparison\\test-new.cy.ts-name.png"
+        }
+      ]
+    }
+  ],
+  "startedAt": "2024-04-29T10:25:21.429Z",
+  "endedAt": "2024-04-29T10:26:28.907Z",
+  "duration": 62821,
+  "browserName": "electron",
+  "browserVersion": "118.0.5993.159",
+  "cypressVersion": "13.6.6"
+}

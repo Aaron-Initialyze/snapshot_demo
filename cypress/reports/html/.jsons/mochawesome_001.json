@@ -1,0 +1,134 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-04-29T10:26:02.793Z",
+    "end": "2024-04-29T10:26:15.657Z",
+    "duration": 12864,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a5fce890-b6eb-46f5-8c45-ceea734f3c8b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\helloworld.cy.ts",
+      "file": "cypress\\e2e\\helloworld.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "81630e1e-a681-4577-93e9-f80bcf292904",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "template spec passes",
+              "timedOut": null,
+              "duration": 12370,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/who-we-are');\ncy.get(\"button.cm-btn.cm-btn-success.cm-btn-accept-all\").should('contain', 'QAClick Academy');\ncy.get(\"button.cm-btn.cm-btn-success.cm-btn-accept-all\").click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<button.cm-btn.cm-btn-success.cm-btn-accept-all>' to contain 'QAClick Academy'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<button.cm-btn.cm-btn-success.cm-btn-accept-all>' to contain 'QAClick Academy'\n    at Context.eval (webpack://cy_type/./cypress/e2e/helloworld.cy.ts:4:0)",
+                "diff": null
+              },
+              "uuid": "954b5da3-1f38-45f0-b998-542959f1514d",
+              "parentUUID": "81630e1e-a681-4577-93e9-f80bcf292904",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "output",
+              "fullTitle": "template spec output",
+              "timedOut": null,
+              "duration": 69,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('Hello world');",
+              "err": {},
+              "uuid": "90b2a452-0209-4043-a052-fc9ddddda8cb",
+              "parentUUID": "81630e1e-a681-4577-93e9-f80bcf292904",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "90b2a452-0209-4043-a052-fc9ddddda8cb"
+          ],
+          "failures": [
+            "954b5da3-1f38-45f0-b998-542959f1514d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 12439,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

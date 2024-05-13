@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "skipLibCheck": true,
+      "module": "ESNext",
+      "moduleResolution": "Bundler",
+      "allowSyntheticDefaultImports": true,
+      "lib": ["es5", "dom"],
+      "allowJs": true,
+      "esModuleInterop": true,
+      "types": ["cypress", "node", "cypress-image-diff-js"]
+    },
+    "include": ["**/*.ts",
+    "../node_modules/cypress", "cypress-image-diff-html-report.config.ts", "cypress-image-diff.config.ts"]
+  }
